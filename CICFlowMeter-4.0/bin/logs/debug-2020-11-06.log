@@ -1,0 +1,67 @@
+2020-11-06 13:50:03 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select input C:\Users\q_blo\Documents\Masters Project BTC\Data\My PCaps\Paul_tcpdump.pcap
+2020-11-06 13:50:13 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select output C:\Users\q_blo\Documents\Masters Project BTC\Data\My PCaps
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.worker.ReadPcapFileWorker    Working on... C:\Users\q_blo\Documents\Masters Project BTC\Data\My PCaps\Paul_tcpdump.pcap
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  93 87 ba 3d    ........>.t4...=
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  05 87 14 93    ........>.t4....
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  b2 21 27 88    ........>.t4.!'.
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  b2 20 36 3a    ........>.t4. 6:
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  a4 84 9f eb    ........>.t4....
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  c1 46 57 ea    ........>.t4.FW.
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  33 ff 67 d4    ........>.t43.g.
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  91 ef 78 48    ........>.t4..xH
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*52 fc 78 6f  cc bb fa 16* 3e fa 74 34  08 06 00 01    R.xo....>.t4....
+0010: 08 00 06 04  00 02 fa 16  3e fa 74 34  91 ef d3 20    ........>.t4... 
+0020: 52 fc 78 6f  cc bb c1 46  54 01*                      R.xo...FT.      
+
+
+2020-11-06 13:50:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on C:\Users\q_blo\Documents\Masters Project BTC\Data\My PCaps\Paul_tcpdump.pcap

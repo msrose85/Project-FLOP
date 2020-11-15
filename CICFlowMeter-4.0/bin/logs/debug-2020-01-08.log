@@ -1,0 +1,70 @@
+2020-01-08 12:15:57 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select input C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2.pcap
+2020-01-08 12:16:09 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select output C:\Users\q_blo\Documents\Masters Project BTC
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.worker.ReadPcapFileWorker    Working on... C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2.pcap
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 7 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 55 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 60 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 59 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 58 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 57 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 56 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 55 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 54 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 53 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 52 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 51 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 50 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 49 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 48 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 55 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 56 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 60 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 62 flow
+2020-01-08 12:16:11 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2.pcap
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\4 maple (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Add-in Express (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Agile Course (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\CLM Essay Appeals Process.docx_files (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\com.moodle.moodlemobile (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Custom Office Templates (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\HP (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\hp.applications.package.appdata (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\hp.system.package.metadata (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Machine Learning (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Masters Project BTC (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Music (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\OneNote Notebooks (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Pictures (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Python (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Python Scripts (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Spike Island (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Tax (Access is denied)
+2020-01-08 12:18:43 DEBUG swing.common.SwingUtils    C:\Users\q_blo\Documents\Work (Access is denied)
+2020-01-08 12:18:51 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select input C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2VPN.pcap
+2020-01-08 12:18:53 DEBUG cic.cs.unb.ca.jnetpcap.worker.ReadPcapFileWorker    Working on... C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2VPN.pcap
+2020-01-08 12:18:53 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2VPN.pcap
+2020-01-08 12:24:40 DEBUG cic.cs.unb.ca.flow.ui.FlowOfflinePane    offline select input C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2VPN2.pcap
+2020-01-08 12:24:42 DEBUG cic.cs.unb.ca.jnetpcap.worker.ReadPcapFileWorker    Working on... C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2VPN2.pcap
+2020-01-08 12:24:42 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*33 33 ff 21  50 70 90 21  06 75 18 09* 86 dd 60 00    33.!Pp.!.u....`.
+0010: 00 00 00 20  3a ff fe 80  00 00 00 00  00 00 92 21    ... :..........!
+0020: 06 ff fe 75  18 09 ff 02  00 00 00 00  00 00 00 00    ...u............
+0030: 00 01 ff 21  50 70 87 00  31 dd 00 00  00 00 2a 02    ...!Pp..1.....*.
+0040: 0c 7d 08 5c  b0 00 dc 1e  ea e3 94 21  50 70 01 01    .}.\.......!Pp..
+0050: 90 21 06 75  18 09*                                   .!.u..          
+
+
+2020-01-08 12:24:42 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*33 33 ff 21  50 70 90 21  06 75 18 09* 86 dd 60 00    33.!Pp.!.u....`.
+0010: 00 00 00 20  3a ff fe 80  00 00 00 00  00 00 92 21    ... :..........!
+0020: 06 ff fe 75  18 09 ff 02  00 00 00 00  00 00 00 00    ...u............
+0030: 00 01 ff 21  50 70 87 00  e1 e2 00 00  00 00 fd 28    ...!Pp.........(
+0040: d2 62 6f 4a  00 00 dc 1e  ea e3 94 21  50 70 01 01    .boJ.......!Pp..
+0050: 90 21 06 75  18 09*                                   .!.u..          
+
+
+2020-01-08 12:24:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 87 flow
+2020-01-08 12:24:43 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 95 flow
+2020-01-08 12:24:43 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on C:\Users\q_blo\Documents\Masters Project BTC\PCaps\test2VPN2.pcap

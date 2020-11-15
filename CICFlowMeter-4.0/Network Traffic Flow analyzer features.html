@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.netflowmeter.ca/netflowmeter.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Network Traffic Flow analyzer</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="NetFlowMeter ">
+		<meta name="keywords" content="CIC, cybersecurity, Network Traffic, FlowMeter">
+		<link rel="stylesheet" href="./Network Traffic Flow analyzer features_files/main.css">
+	</head>
+	<body class="">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="http://www.unb.ca/cic"><img src="./Network Traffic Flow analyzer features_files/logo.png" style="vertical-align:sub;"></a>
+				<nav>
+					<a href="http://www.netflowmeter.ca/netflowmeter.html#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			
+
+		<!-- Heading -->
+			<div id="heading">
+				<h1>CICFlowMeter (Formerly ISCXFlowMeter)</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						
+<header>
+<h2>Network traffic Flow analyzer: </h2>
+</header>
+NetFlowMeter is a network traffic flow generator which has been written in Java and offers more flexibility in terms of choosing the features you want to calculate, adding new ones, and also having a better control of the duration of the flow timeout.
+
+CICFlowMeter generates Bidirectional Flows (Biflow), where the first packet determines the forward (source to destination) and backward (destination to source) directions, hence the 83 statistical features such as Duration, Number of packets, Number of bytes, Length of packets, etc are also calculated separately in the forward and reverse direction.
+
+The output of the application is the CSV file format with six columns labeled for each flow, namely FlowID, SourceIP, DestinationIP, SourcePort, DestinationPort, and Protocol with more than 80 network traffic features.
+
+Note that TCP flows are usually terminated upon connection teardown (by FIN packet) while UDP flows are terminated by a flow timeout. The flow timeout value can be assigned arbitrarily by the individual scheme, e.g. 600 seconds for both TCP and UDP.<br><br>
+
+<table>
+<tbody><tr><td><b>Feature Name</b></td><td><b>Description</b></td></tr>
+<tr><td>Feduration</td><td>Duration of the flow in Microsecond</td></tr>
+<tr><td>Flow Feduration</td><td>			Duration of the flow in Microsecond</td></tr>
+<tr><td>total FWwd Packet	</td><td>	Total packets in the forward direction</td></tr>
+<tr><td>total Bwd packets	</td><td>	Total packets in the backward direction</td></tr>
+<tr><td>total Length of Fwd Packet</td><td>	Total size of packet in forward direction</td></tr>
+<tr><td>total Length of Bwd Packet	</td><td>Total size of packet in backward direction</td></tr>
+<tr><td>Fwd Packet Length Min </td><td>		Minimum size of packet in forward direction</td></tr>
+<tr><td>Fwd Packet Length Max </td><td>		Maximum size of packet in forward direction</td></tr>
+<tr><td>Fwd Packet Length Mean	</td><td>	Mean size of packet in forward direction</td></tr>
+<tr><td>Fwd Packet Length Std</td><td>		Standard deviation size of packet in forward direction</td></tr>
+<tr><td>Bwd Packet Length Min	</td><td>	Minimum size of packet in backward direction</td></tr>
+<tr><td>Bwd Packet Length Max	</td><td>	Maximum size of packet in backward direction</td></tr>
+<tr><td>Bwd Packet Length Mean	</td><td>	Mean size of packet in backward direction</td></tr>
+<tr><td>Bwd Packet Length Std	</td><td>	Standard deviation size of packet in backward direction</td></tr>
+<tr><td>Flow Byte/s		</td><td>	Number of flow packets per second</td></tr>
+<tr><td>Flow Packets/s		</td><td>	Number of flow bytes per second</td></tr> 
+<tr><td>Flow IAT Mean	</td><td>	Mean time between two packets sent in the flow</td></tr>
+<tr><td>Flow IAT Std	</td><td>	Standard deviation time between two packets sent in the flow</td></tr>
+<tr><td>Flow IAT Max	</td><td>	Maximum time between two packets sent in the flow</td></tr>
+<tr><td>Flow IAT Min	</td><td>	Minimum time between two packets sent in the flow</td></tr>
+<tr><td>Fwd IAT Min</td><td>	Minimum time between two packets sent in the forward direction</td></tr>
+<tr><td>Fwd IAT Max</td><td>	Maximum time between two packets sent in the forward direction</td></tr>
+<tr><td>Fwd IAT Mean	</td><td>Mean time between two packets sent in the forward direction</td></tr>
+<tr><td>Fwd IAT Std	</td><td>Standard deviation time between two packets sent in the forward direction</td></tr>
+<tr><td>Fwd IAT Total   </td><td>Total time between two packets sent in the forward direction</td></tr>
+<tr><td>Bwd IAT Min	</td><td>Minimum time between two packets sent in the backward direction</td></tr>
+<tr><td>Bwd IAT Max	</td><td>Maximum time between two packets sent in the backward direction</td></tr>
+<tr><td>Bwd IAT Mean</td><td>	Mean time between two packets sent in the backward direction</td></tr>
+<tr><td>Bwd IAT Std</td><td>	Standard deviation time between two packets sent in the backward direction</td></tr>
+<tr><td>Bwd IAT Total	</td><td>Total time between two packets sent in the backward direction</td></tr>
+<tr><td>Fwd PSH flag</td><td>	Number of times the PSH flag was set in packets travelling in the forward direction (0 for UDP)</td></tr>
+<tr><td>Bwd PSH Flag</td><td>	Number of times the PSH flag was set in packets travelling in the backward direction (0 for UDP)</td></tr>
+<tr><td>Fwd URG Flag	</td><td>Number of times the URG flag was set in packets travelling in the forward direction (0 for UDP)</td></tr>
+<tr><td>Bwd URG Flag	</td><td>Number of times the URG flag was set in packets travelling in the backward direction (0 for UDP)</td></tr>
+<tr><td>Fwd Header Length	</td><td>Total bytes used for headers in the forward direction</td></tr>
+<tr><td>Bwd Header Length</td><td>	Total bytes used for headers in the backward direction</td></tr>
+<tr><td>FWD Packets/s</td><td>	Number of forward packets per second</td></tr>
+<tr><td>Bwd Packets/s</td><td>	Number of backward packets per second</td></tr>
+<tr><td>Min Packet Length </td><td>	Minimum length of a packet</td></tr>
+<tr><td>Max Packet Length</td><td> 	Maximum length of a packet</td></tr>
+<tr><td>Packet Length Mean</td><td> 	Mean length of a packet</td></tr>
+<tr><td>Packet Length Std</td><td>	Standard deviation length of a packet</td></tr>
+<tr><td>Packet Length Variance </td><td> Variance length of a packet</td></tr>
+<tr><td>FIN Flag Count </td><td>		Number of packets with FIN</td></tr>
+<tr><td>SYN Flag Count</td><td> 		Number of packets with SYN</td></tr>
+<tr><td>RST Flag Count 	</td><td>	Number of packets with RST</td></tr>
+<tr><td>PSH Flag Count 	</td><td>	Number of packets with PUSH</td></tr>
+<tr><td>ACK Flag Count 	</td><td>	Number of packets with ACK</td></tr>
+<tr><td>URG Flag Count 	</td><td>	Number of packets with URG</td></tr>
+<tr><td>CWR Flag Count 	</td><td>	Number of packets with CWE</td></tr>
+<tr><td>ECE Flag Count 	</td><td>	Number of packets with ECE</td></tr>
+<tr><td>down/Up Ratio</td><td>		Download and upload ratio</td></tr>
+<tr><td>Average Packet Size </td><td>	Average size of packet</td></tr>
+<tr><td>Avg Fwd Segment Size </td><td>	Average size observed in the forward direction</td></tr>
+<tr><td>AVG Bwd Segment Size </td><td>	Average number of bytes bulk rate in the forward direction</td></tr>
+<tr><td>Fwd Header Length	</td><td>Length of header for forward packet</td></tr> 
+<tr><td>Fwd Avg Bytes/Bulk</td><td>	Average number of bytes bulk rate in the forward direction</td></tr>
+<tr><td>Fwd AVG Packet/Bulk</td><td> 	Average number of packets bulk rate in the forward direction</td></tr>
+<tr><td>Fwd AVG Bulk Rate </td><td>	Average number of bulk rate in the forward direction</td></tr>
+<tr><td>Bwd Avg Bytes/Bulk	</td><td>Average number of bytes bulk rate in the backward direction</td></tr>
+<tr><td>Bwd AVG Packet/Bulk </td><td>	Average number of packets bulk rate in the backward direction</td></tr>
+<tr><td>Bwd AVG Bulk Rate </td><td>	Average number of bulk rate in the backward direction</td></tr>
+<tr><td>Subflow Fwd Packets	</td><td>The average number of packets in a sub flow in the forward direction</td></tr>
+<tr><td>Subflow Fwd Bytes</td><td>	The average number of bytes in a sub flow in the forward direction</td></tr>
+<tr><td>Subflow Bwd Packets	</td><td>The average number of packets in a sub flow in the backward direction</td></tr>
+<tr><td>Subflow Bwd Bytes</td><td>	The average number of bytes in a sub flow in the backward direction</td></tr>
+<tr><td>Init_Win_bytes_forward</td><td>	The total number of bytes sent in initial window in the forward direction</td></tr>
+<tr><td>Init_Win_bytes_backward	</td><td>The total number of bytes sent in initial window in the backward direction</td></tr>
+<tr><td>Act_data_pkt_forward	</td><td>Count of packets with at least 1 byte of TCP data payload in the forward direction</td></tr>
+<tr><td>min_seg_size_forward</td><td>	Minimum segment size observed in the forward direction</td></tr>
+<tr><td>Active Min	</td><td>Minimum time a flow was active before becoming idle</td></tr>
+<tr><td>Active Mean	</td><td>Mean time a flow was active before becoming idle</td></tr>
+<tr><td>Active Max</td><td>	Maximum time a flow was active before becoming idle</td></tr>
+<tr><td>Active Std</td><td>	Standard deviation time a flow was active before becoming idle</td></tr>
+<tr><td>Idle Min</td><td>	Minimum time a flow was idle before becoming active</td></tr>
+<tr><td>Idle Mean</td><td>	Mean time a flow was idle before becoming active</td></tr>
+<tr><td>Idle Max</td><td>	Maximum time a flow was idle before becoming active</td></tr>
+<tr><td>Idle Std</td><td>	Standard deviation time a flow was idle before becoming active</td></tr>
+
+<tr><td>total_fpackets</td><td>Total packets in the forward direction</td></tr>
+<tr><td>total_bpackets</td><td>Total packets in the backward direction</td></tr>
+<tr><td>total_fpktl</td><td>Total size of packet in forward direction</td></tr>
+<tr><td>total_bpktl</td><td>Total size of packet in backward direction</td></tr>
+<tr><td>min_fpktl</td><td>Minimum size of packet in forward direction</td></tr>
+<tr><td>min_bpktl</td><td>Minimum size of packet in backward direction</td></tr>
+<tr><td>max_fpktl</td><td>Maximum size of packet in forward direction</td></tr>
+<tr><td>max_bpktl</td><td>Maximum size of packet in backward direction</td></tr>
+<tr><td>mean_fpktl</td><td>Mean size of packet in forward direction</td></tr>
+<tr><td>mean_bpktl</td><td>Mean size of packet in backward direction</td></tr>
+<tr><td>std_fpktl</td><td>Standard deviation size of packet in forward direction</td></tr>
+<tr><td>std_bpktl</td><td>Standard deviation size of packet in backward direction</td></tr>
+<tr><td>total_fiat</td><td>Total time between two packets sent in the forward direction</td></tr>
+<tr><td>total_biat</td><td>Total time between two packets sent in the backward direction</td></tr>
+<tr><td>min_fiat</td><td>Minimum time between two packets sent in the forward direction</td></tr>
+<tr><td>min_biat</td><td>Minimum time between two packets sent in the backward direction</td></tr>
+<tr><td>max_fiat</td><td>Maximum time between two packets sent in the forward direction</td></tr>
+<tr><td>max_biat</td><td>Maximum time between two packets sent in the backward direction</td></tr>
+<tr><td>mean_fiat</td><td>Mean time between two packets sent in the forward direction</td></tr>
+<tr><td>mean_biat</td><td>Mean time between two packets sent in the backward direction</td></tr>
+<tr><td>std_fiat</td><td>Standard deviation time between two packets sent in the forward direction</td></tr>
+<tr><td>std_biat</td><td>Standard deviation time between two packets sent in the backward direction</td></tr>
+<tr><td>fpsh_cnt</td><td>Number of times the PSH flag was set in packets travelling in the forward direction (0 for UDP)</td></tr>
+<tr><td>bpsh_cnt</td><td>Number of times the PSH flag was set in packets travelling in the backward direction (0 for UDP)</td></tr>
+<tr><td>furg_cnt</td><td>Number of times the URG flag was set in packets travelling in the forward direction (0 for UDP)</td></tr>
+<tr><td>burg_cnt</td><td>Number of times the URG flag was set in packets travelling in the backward direction (0 for UDP)</td></tr>
+<tr><td>total_fhlen</td><td>Total bytes used for headers in the forward direction</td></tr>
+<tr><td>total_bhlen</td><td>Total bytes used for headers in the backward direction</td></tr>
+<tr><td>fPktsPerSecond</td><td>Number of forward packets per second</td></tr>
+<tr><td>bPktsPerSecond</td><td>Number of backward packets per second</td></tr>
+<tr><td>flowPktsPerSecond</td><td>Number of flow packets per second</td></tr>
+<tr><td>flowBytesPerSecond</td><td>Number of flow bytes per second</td></tr>
+<tr><td>min_flowpktl</td><td>Minimum length of a flow</td></tr>
+<tr><td>max_flowpktl</td><td>Maximum length of a flow</td></tr>
+<tr><td>mean_flowpktl</td><td>Mean length of a flow</td></tr>
+<tr><td>std_flowpktl</td><td>Standard deviation length of a flow</td></tr>
+<tr><td>min_flowiat</td><td>Minimum inter-arrival time of packet</td></tr>
+<tr><td>max_flowiat</td><td>Maximum inter-arrival time of packet</td></tr>
+<tr><td>mean_flowiat</td><td>Mean inter-arrival time of packet</td></tr>
+<tr><td>std_flowiat</td><td>Standard deviation inter-arrival time of packet</td></tr>
+<tr><td>flow_fin</td><td>Number of packets with FIN</td></tr>
+<tr><td>flow_syn</td><td>Number of packets with SYN</td></tr>
+<tr><td>flow_rst</td><td>Number of packets with RST</td></tr>
+<tr><td>flow_psh</td><td>Number of packets with PUSH</td></tr>
+<tr><td>flow_ack</td><td>Number of packets with ACK</td></tr>
+<tr><td>flow_urg</td><td>Number of packets with URG</td></tr>
+<tr><td>flow_cwr</td><td>Number of packets with CWE</td></tr>
+<tr><td>flow_ece</td><td>Number of packets with ECE</td></tr>
+<tr><td>downUpRatio</td><td>Download and upload ratio</td></tr>
+<tr><td>avgPacketSize</td><td>Average size of packet</td></tr>
+<tr><td>fAvgSegmentSize</td><td>Average size observed in the forward direction</td></tr>
+<tr><td>fAvgBytesPerBulk</td><td>Average number of bytes bulk rate in the forward direction</td></tr>
+<tr><td>fAvgPacketsPerBulk</td><td>Average number of packets bulk rate in the forward direction</td></tr>
+<tr><td>fAvgBulkRate</td><td>Average number of bulk rate in the forward direction</td></tr>
+<tr><td>bAvgSegmentSize</td><td>Average size observed in the backward direction</td></tr>
+<tr><td>bAvgBytesPerBulk</td><td>Average number of bytes bulk rate in the backward direction</td></tr>
+<tr><td>bAvgPacketsPerBulk</td><td>Average number of packets bulk rate in the backward direction</td></tr>
+<tr><td>bAvgBulkRate</td><td>Average number of bulk rate in the backward direction</td></tr>
+<tr><td>sflow_fpacket</td><td>The average number of packets in a sub flow in the forward direction</td></tr>
+<tr><td>sflow_fbytes</td><td>The average number of bytes in a sub flow in the forward direction</td></tr>
+<tr><td>sflow_bpacket</td><td>The average number of packets in a sub flow in the backward direction</td></tr>
+<tr><td>sflow_bbytes</td><td>The average number of bytes in a sub flow in the backward direction</td></tr>
+<tr><td>min_active</td><td>Minimum time a flow was active before becoming idle</td></tr>
+<tr><td>mean_active</td><td>Mean time a flow was active before becoming idle</td></tr>
+<tr><td>max_active</td><td>Maximum time a flow was active before becoming idle</td></tr>
+<tr><td>std_active</td><td>Standard deviation time a flow was active before becoming idle</td></tr>
+<tr><td>min_idle</td><td>Minimum time a flow was idle before becoming active</td></tr>
+<tr><td>mean_idle</td><td>Mean time a flow was idle before becoming active</td></tr>
+<tr><td>max_idle</td><td>Maximum time a flow was idle before becoming active</td></tr>
+<tr><td>std_idle</td><td>Standard deviation time a flow was idle before becoming active</td></tr>
+<tr><td>Init_Win_bytes_forward</td><td>The total number of bytes sent in initial window in the forward direction</td></tr>
+<tr><td>Init_Win_bytes_backward</td><td>The total number of bytes sent in initial window in the backward direction</td></tr>
+<tr><td>Act_data_pkt_forward</td><td>Count of packets with at least 1 byte of TCP data payload in the forward direction</td></tr>
+<tr><td>min_seg_size_forward</td><td>Minimum segment size observed in the forward direction</td></tr>
+
+</tbody></table>
+
+<b>Licence:<br>
+
+For citation in your works or to learn more about CICFlowMeter, see the following published papers: </b> <br><br>
+
+Arash Habibi Lashkari, Gerard Draper-Gil, Mohammad Saiful Islam Mamun and Ali A. Ghorbani, "Characterization of Tor Traffic Using Time Based Features", In the proceedings of the 3rd International Conference on Information System Security and Privacy, SCITEPRESS, Porto, Portugal, 2017 <br><br>
+
+Gerard Drapper Gil, Arash Habibi Lashkari, Mohammad Mamun, Ali A. Ghorbani, Characterization of Encrypted and VPN Traffic Using Time-Related Features", In the proceedings of the 2nd International Conference on Information Systems Security and Privacy (ICISSP 2016), pages 407-414, Italy, 2016
+
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<div class="content">
+<section>
+<h3>About CICFlowmeter (Formerly ISCXFlowMeter)</h3>
+<p>
+CICFlowMeter is a network traffic flow generator distributed by CIC to generate 84 network traffic features. It reads pcap file and generate a graphical report of the features extracted and also provides csv file of the report. It is an open source application written in Java and can be downloaded from Github. Its source codes can be integrated to a project as it offers more flexibility in terms of choosing the features you want to calculate, adding new ones, and also having a better control of the duration of the flow timeout. </p>
+<p>
+CICFlowMeter generates Bidirectional Flows (Biflow), where the first packet determines the forward (source to destination) and backward (destination to source) directions, hence the 84 statistical features such as Duration, Number of packets, Number of bytes, Length of packets, etc are also calculated separately in the forward and reverse direction. The output of the application is the CSV file format with six columns labeled for each flow, namely FlowID, SourceIP, DestinationIP, SourcePort, DestinationPort, and Protocol with more than 80 network traffic features. Note that TCP flows are usually terminated upon connection teardown (by FIN packet) while UDP flows are terminated by a flow timeout. The flow timeout value can be assigned arbitrarily by the individual scheme, e.g. 600 seconds for both TCP and UDP. 
+</p>
+</section>
+<section>
+<h4>Team members:</h4>
+<ul class="alt">
+	<li><a href="https://www.cs.unb.ca/people/alashkar" target="_blank">
+	<img style="border-radius: 50%;float:left;padding-right: 6px;" src="./Network Traffic Flow analyzer features_files/arash.jpg">
+	Dr. Arash Habibi Lashkari <br>Project leader <br>(Founder, since 2015)</a></li>
+
+	<li><a href="https://www.linkedin.com/in/yongcan-zhang-1a097b23/" target="_blank">
+	<img style="border-radius: 50%;float:left;padding-right: 6px;" src="./Network Traffic Flow analyzer features_files/yong.jpeg">
+	Yongcan Zang<br> Developer <br>(Improvement, Web-based version)</a></li>
+
+	<li><a href="https://www.linkedin.com/in/gift-owhuo-5aa515107/" target="_blank">
+	<img style="border-radius: 50%;float:left;padding-right: 6px;" src="./Network Traffic Flow analyzer features_files/gift.jpeg">
+	Gift Owhuo<br>Developer <br>(Development new featutres)</a></li>
+
+	<li><a href="https://ca.linkedin.com/in/msimamun" target="_blank">
+	<img style="border-radius: 50%;float:left;padding-right: 6px;" src="./Network Traffic Flow analyzer features_files/Mamun.jpg">
+	Dr. Mohammad Saiful Islam Mamun<br>Researcher &amp; Developer<br>(UNB Postdoc 2015-2016)</a></li>
+
+	<li><a href="https://www.linkedin.com/in/gerard-draper-gil-0621063/" target="_blank">
+	<img style="border-radius: 50%;float:left;padding-right: 6px;" src="./Network Traffic Flow analyzer features_files/Gerard.jpeg">
+	Dr. Gerard Draper Gil<br>Researcher &amp; Developer<br>(UNB Postdoc 2015-2016)</a></li>
+	</ul>
+</section>
+</div>
+<div class="copyright">
+© CICFlowMeter 2017-2019 (ISCXFlowMeter 2015-2017).
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="./Network Traffic Flow analyzer features_files/jquery.min.js.download"></script>
+<script src="./Network Traffic Flow analyzer features_files/browser.min.js.download"></script>
+<script src="./Network Traffic Flow analyzer features_files/breakpoints.min.js.download"></script>
+<script src="./Network Traffic Flow analyzer features_files/util.js.download"></script>
+<script src="./Network Traffic Flow analyzer features_files/main.js.download"></script><nav id="menu">
+				<ul class="links">
+					<li><a href="http://www.netflowmeter.ca/index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Home</a></li>
+					<li><a href="http://www.netflowmeter.ca/index.html" target="_blank" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Analyzer</a></li>
+					<li><a href="http://www.netflowmeter.ca/netflowmeter.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">About CICFlowMeter</a></li>
+					<li><a href="http://www.netflowmeter.ca/sourcecode.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Source Code</a></li>
+				</ul>
+			<a href="http://www.netflowmeter.ca/netflowmeter.html#menu" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></nav>
+
+
+</body></html>
