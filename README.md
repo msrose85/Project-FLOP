@@ -14,6 +14,8 @@ Future versions will be able to predict:
 
 The model was tested using data from the ISCX VPN / non-VPN dataset and using the application CIC-FLOW-METER, both of which were created by the University of New Brunswick (https://www.unb.ca/cic/datasets/index.html)
 
+CIC-FLOW-METER has been added here, but can also be downloaded from the original source at https://github.com/CanadianInstituteForCybersecurity/CICFlowMeter, although updated versions have not been tested. 
+
 ****************************************
 
 How to use:
