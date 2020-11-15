@@ -20,23 +20,23 @@ CIC-FLOW-METER has been added here, but can also be downloaded from the original
 
 How to use:
 
-Training Dataset:
+- Add the Training Dataset:
 
-Frist chose a training dataset. The 'all data' CSV is provided as a pre-labelled option. Alternatively create a new training dataset using the CIC-FLOW-METER application, noting that you will have to manually label the data.
+- First chose a training dataset. The 'all data' CSV is provided as a pre-labelled option. Alternatively create a new training dataset using the CIC-FLOW-METER application, noting that you will have to manually label the data.
 
-In the python code, enter the location of the training dataset CSV where indicated.
+- In the python code, enter the location of the training dataset CSV where indicated.
 
 
-Testset:
+Add the Testset:
 
-Use the CIC-FLOW-METER application to create a flow features CSV of the PCAP you wish to analyise.
+- Use the CIC-FLOW-METER application to create a flow features CSV of the PCAP you wish to analyise.
 
-Enter the location of the CSV as the testset in the python code.
+- Enter the location of the CSV as the testset in the python code.
 
 Run the code:
 
-The code will generate a Random Forest model (previous research shows that RF provides the best balance of speed and performance for the data). Check the metrics to validate how well the model has performed on the training data.  
+- The code will generate a Random Forest model (previous research shows that RF provides the best balance of speed and performance for the data). Check the metrics to validate how well the model has performed on the training data.  
 
-The code will make predictions of the testset and add the predictions to the final column of the flow DataFrame. You can now either view the Dataframe directly, copy and paste the predictions, or write the DataFrame to a new CSV depending on what you want to achieve. 
+- The code will make predictions on the testset and add the predictions to the final column of the testset DataFrame. You can now either view the DataFrame directly, copy and paste the predictions, or write the DataFrame to a new CSV depending on what you want to achieve. 
 
    
