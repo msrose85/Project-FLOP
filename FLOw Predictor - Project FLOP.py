@@ -8,12 +8,13 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, recall_score, precision_score, f1_score
 
 # Importing the training dataset
-dataset = pd.read_csv('Flow Training Data.csv') # name or path of trainng data
+dataset = pd.read_csv('Flow Training Data.csv') # name or path of training data
+testset = pd.read_csv(r'C:\Users\q_blo\Documents\Masters Project BTC\Data\merged\Paul_tcpdump.pcap_Flow.csv')  # name or path to file to be predicted
 
 # Cleaning the data
 dataset = dataset[dataset.Duration != 0]
 
-# Splitting variables 
+# Splitting variables in the training set
 
 # Use for prediciting VPN vs non-VPN
 def splitVPNnonVPN():
@@ -41,8 +42,7 @@ Y_axis = np.unique(labelencoderY.inverse_transform(y))
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
 
-# Import the new testset
-testset = pd.read_csv(r'C:\Users\q_blo\Documents\Masters Project BTC\Data\merged\Paul_tcpdump.pcap_Flow.csv')  # name or path to file to be predicted
+# splitting variables in the testset
 X_new = testset.iloc[:, 7:83].values
 y_new = testset.iloc[:, 83].values
 
