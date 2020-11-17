@@ -7,12 +7,14 @@ The current version is capable of predicting:
 
 - Whether flows were created using OpenVPN or not.
 
-Future versions will be able to predict:
+With updated trainig data it could also be used to predict:
 
 - The class of the traffic (e.g. Web Browsing, Video Streaming, File Transfer, P2P etc)
 - The application used to create the traffic.
 
-The model was tested using data from the ISCX VPN / non-VPN dataset and using the application CIC-FLOW-METER, both of which were created by the University of New Brunswick (https://www.unb.ca/cic/datasets/index.html)
+Both of the above scenarios have been tested and shown to be possible, however the training data provided here may not be sufficient to a achieve a high performance for contemporary internet traffic.   
+
+The model has been trained and tested using data from the ISCX VPN / non-VPN dataset and using the application CIC-FLOW-METER, both of which were created by the University of New Brunswick (https://www.unb.ca/cic/datasets/index.html).
 
 CIC-FLOW-METER has been added here, but can also be downloaded from the original source at https://github.com/CanadianInstituteForCybersecurity/CICFlowMeter, although updated versions have not been tested. 
 
