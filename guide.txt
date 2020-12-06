@@ -1,0 +1,18 @@
+Instructions for how to use VPN Predictor
+
+Create and train the model. If this is the first time using a new model,first chose a training dataset to train a new model. The 'all data' CSV is provides as an option. Alternatively create a new training set using the Cic-Flow-Meter application, noting that you will have to manually label the data. If you have already trained a model previously, then altenatievly you can load an exisiting model instead.
+
+Load the test set. Use the Cic-Flow-Meter application to create a flow features CSV of the PCAP you wish to analyise, then load this file. 
+
+Make predictions. The application will make predictions on the test set and identify wethere flows were using a VPN or not. The first few lines will be shown in the display area. 
+
+Save Results. You can now save the results as a CSV, the last column of the CSV will contain the predictions. 
+
+Notes:
+
+The model uses a Random Forest Classifer which has been configured based on previous research to provide the optimum results. 
+
+If training a model using the 'all data' CSV, it was created using data from the ISCX dataset. It was created in 2016 and may not provide the best training dataset for modern data. 
+
+If creating a new training set instead, you will need to use Cic-Flow-Meter to extract the features, then manually label the classes. It is recomended to capture multiple PCAPs, run Cic-Flow-Meter against them in turn and then use Power Query to combine the rsults. The resulting CSV should contain 86 columns, in the same format as the 'all data' CSV. 
+
